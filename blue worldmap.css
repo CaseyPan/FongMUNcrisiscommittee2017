@@ -1,0 +1,99 @@
+#hex1{
+	position: absolute;
+	top: 0px;
+	right:0px;
+ }
+#hex2{
+	position: absolute;
+    right: 36px;
+    top:  0px;                                                      
+}
+#hex3{
+	position: absolute;
+	right: 18px;
+	top:  12px;     
+}
+
+.btn-group .button{
+	border:1px solid black;
+	border-radius: 4px;
+	color: black;
+	display:inline-block;
+	padding:4px 5px 5px;
+	font-size:14px;
+	font-family: Arial;
+	width: 50px;
+	height: 25px;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	display: block;
+}
+/*.btn-group .button:not(:last-child) {
+    border-bottom:none;
+}*/
+#red_btn{
+	background-color: #f44336;
+}
+#red_btn:hover {
+	background-color: #df2020;
+}
+#yellow_btn{
+	background-color: #ffff33;
+}
+#yellow_btn:hover{
+	background-color: #d9d926;
+}
+#green_btn{
+	background-color: #4CAF50;
+}
+#green_btn:hover {
+	background-color: #3e8e41;
+}
+div.roll-down-menu{
+	display: none;
+}
+div.btn-group:hover > div.roll-down-menu {
+	display: block;
+}
+
+/*#hex4{
+	position: fixed;
+	right: 36px;
+	top:  0px;    
+}
+#hex5{
+	position: fixed;
+	right: 27px;
+	top:  6px;     
+}
+#hex6{
+	position: fixed;
+	right: 54px;
+	top:  0px;    
+}
+#hex7{
+	position: fixed;
+	right: 45px;
+	top:  6px;     
+}
+#hex8{
+	position: fixed;
+	right: 72px;
+	top:  0px;    
+}
+#hex9{
+	position: fixed;
+	right: 81px;
+	top:  6px;     
+}
+#hex10{
+	position: fixed;
+	right: 90px;
+	top:  0px;    
+}
+#hex11{
+	position: fixed;
+	right: px;
+	top:  6px;     
+}*/

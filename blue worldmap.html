@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel=" stylesheet type" href="blue worldmap.css"/>
+		<style type="text/css">
+		body{
+			background-image: url("http://i.imgur.com/5CJ1cjb.jpg");
+			background-repeat:no-repeat;
+			background-position:center;
+			background-size:contain;
+			background-attachment:fixed;
+			min-height: 100%;
+			min-width: 100%;
+			z-index: -999;
+			}
+		.hexagon{
+			opacity: 0.5;
+ 			width: 24px;
+			height:24px;
+    		transform: rotate(30deg);
+    		z-index: 1;
+
+		}
+		</style>
+	</head>
+
+    <body>
+        <div id="hex1">
+     		<input type="image" id="hex1_input" class="hexagon" onclick="change_color('hex1_input')" src="http://i.imgur.com/AAiECha.png" />
+     		<p id="num1" style="position: relative; top:-30px; left:15px ; font-size: 8px;">10</p>
+     		<p id="num2" style="position: relative; top:-47.5px; left:0px ; font-size: 8px;">22</p>
+     	</div>
+
+     	<div id="hex2">
+     		<input type="image" class="hexagon" src="http://i.imgur.com/AAiECha.png" />
+     	</div>
+
+    	<div id="hex3">
+     		<input type="image" class="hexagon" src="http://i.imgur.com/AAiECha.png" />
+     	</div>
+     	<div class="btn-group">
+     	<button class="button" id="red_btn" value="0" onclick="red()">red
+     	</button>
+     	<div class="roll-down-menu">
+     	<button class="button" id="yellow_btn" value="1" onclick="yellow()">yellow</button>
+     	<button class="button" id="green_btn" value="2" onclick="green()">green</button>
+     	</div>
+     	</div>
+         	<script type="text/javascript">
+     		var num;
+     		function red(){
+     			num=document.getElementById("red_btn").value;
+     		}
+     		function yellow(){
+     			num=document.getElementById("yellow_btn").value;
+     		}
+     		function green(){
+     			num=document.getElementById("green_btn").value;
+     		}
+     		function change_color(x){
+     			switch(num){
+     			case "0":     				
+     			document.getElementById(x).src="http://i.imgur.com/5Axcvc7.png";
+     			break; //red
+     			case "1":
+     			document.getElementById(x).src="http://i.imgur.com/fKctms1.png";
+                break; //yellow
+                case "2":
+     			document.getElementById(x).src="http://i.imgur.com/wXSDaIG.png";
+                break;//green
+                }
+
+            }	         	      			
+            </script>
+
+            
+     	<!--<div id="hex4">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex5">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex6">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex7">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex8">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex9">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex10">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>
+     	<div id="hex11">
+     		<input type="image" class="hexagon" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t34.0-12/18471311_1367577599995595_84871481_n.png?oh=c18409d19d5d4a61dfa27a220acfb07a&oe=59193D6C" />
+     	</div>-->
+    </body>
+</html>
